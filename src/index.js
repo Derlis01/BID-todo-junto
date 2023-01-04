@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import PersonCard from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <PersonCard name='Doe' lastname='Jane' age={45} hair='Black'/>
+    <PersonCard name='Smith' lastname='John' age={88} hair='Brown'/>
+    <PersonCard name='Fillmore' lastname='Millard' age={50} hair='Brown'/>
+    <PersonCard name='Smith' lastname='Maria' age={62} hair='Brown'/>
   </React.StrictMode>
 );
 
